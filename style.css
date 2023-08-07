@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.navbar {
+    z-index: 999;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    letter-spacing: 5px;
+    text-shadow: -2px 2px 3px grey;
+
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    cursor: pointer;
+}
+
+.logo img{
+    height: 40px;
+    border-radius: 4px;
+    box-shadow: -4px 2px 10px grey;
+}
+
+.logo h2{
+    font-weight: 999;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.navbar .navmenu{
+    display: flex;
+    gap: 25px;
+}
+
+.navbar .navmenu h3{
+    font-weight: 800;
+    font-size: 23x;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.navbar .navmenu h3{
+    position: relative;
+}
+
+.navbar .navmenu .active::after{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    transform: translatex(10%);
+    content: "";
+    width: 80%;
+    height: 5px;
+    background-color: black;
+}
+
+
+
+.backgroundselector{
+    height: calc(100% - 90px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back{
+    background-color: black;
+    color: white;
+    width: 30%;
+    text-align: center;
+
+    border-radius: 17px;
+    padding: 40px 30px;
+}
+
+.back .backheading{
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+.back #clr{
+    /* color: rgb(23, 121, 232); */
+    letter-spacing: 4px;
+}
+
+.changeclr{
+    margin-top: 30px;
+    padding: 9px 15px;
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.changeclr:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
